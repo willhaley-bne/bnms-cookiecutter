@@ -29,7 +29,7 @@ class ServiceBase:
     def __init__(self, store_num=None):
         db = WarehouseConnections()
         self.store_num = store_num
-        session = sessionmaker(db.get_engine('{{ cookiecutter.db_name }}'), autocommit=True)
+        session = sessionmaker(db.get_engine('{{cookiecutter.db_name}}'), autocommit=True)
         self.session = session()
 
     def get_response(self):

@@ -3,7 +3,7 @@ from sqlalchemy import create_engine
 
 class WarehouseConnections:
 
-    engine_connection_string = 'mssql+pymssql://{{ cookiecutter.db_user}}:{{ cookiecutter.db_pass }}@{{ cookiecutter.db_server }}/%s'
+    engine_connection_string = 'mssql+pymssql://{{cookiecutter.db_user}}:{{cookiecutter.db_pass}}@{{cookiecutter.db_server}}/%s'
     databases = ['DepartmentalDataMart', 'Metadata', 'Operations', 'PollingStaging', 'TransactionMart', 'Warehouse']
 
     def __init__(self):
