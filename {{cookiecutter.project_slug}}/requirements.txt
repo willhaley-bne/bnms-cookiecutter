@@ -13,3 +13,4 @@ logdna==1.2.6
 requests
 pymssql
 pandas
+flask-cli
